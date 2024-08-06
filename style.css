@@ -1,15 +1,86 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-main{
+main {
     width: 100%;
-    margin:  0 auto;
+    margin: 0 auto;
 }
-body{
-    background-image: url(/mokoProject/img/firstpage.jpg);
+
+.img>img {
+    width: 50%;
+    border-radius: 20px;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+}
+
+.img {
+    position: absolute;
+    left: 20%;
+    bottom: 20%;
+}
+
+body {
+    background-color: rgba(205, 202, 239, 0.8);
+    height: 100vh;
+}
+
+form {
+    position: absolute;
+    right: 200px;
+    bottom: 30%;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 22px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 16px white;
+    background-color: #ccc;
+    justify-content: center;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    height: 400px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.form__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    width: 80px; 
+    text-align: right;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    flex: 1;
+    width: 100%;
+}
+.form__title{
+    padding-bottom: 30px;
+}
+
+button{
+    cursor: pointer;
+    width: 50%;
+    margin-top: 50px;
+    height: 30px;
+    text-align: center;
+    margin-left: 10px;
 }
